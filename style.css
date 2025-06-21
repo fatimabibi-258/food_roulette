@@ -1,0 +1,122 @@
+/* style.css is a CSS file for styling the web application*/
+/* this is for applying base font, background color and default text color to the entire page */
+body {
+    /* readable font */
+    font-family: 'Segoe UI', Tahoma,sans-serif;
+    /* soft cream background */
+    background-color: #fefae0;
+    margin: 0;
+    padding: 0;
+    /* dark gray text */ 
+    color: #333
+}
+
+.container {
+    width: 90%;
+    max-width: 700px;
+    margin: 40px auto;
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+/* this is for styling main headings */
+h1,h3 {
+    text-align: center;
+    /* warm orange headings */
+    color: #f76f08;
+    margin-bottom: 20px;
+}
+
+/* this is for styling form section */
+form {
+    margin: 30px 0;
+    text-align: center;
+}
+
+/* this is for styling form elements */
+label, select, input, button {
+    display: block;
+    margin: 10px auto;
+    font-size: 16px;
+}
+
+/* this is for styling inputs and dropdowns */
+input, select {
+    padding: 10px;
+    width: 80%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* this is for the base styling of the button*/
+button {
+    padding: 10px 20px;
+    /* soft orange buttons */
+    background-color: #ff914d; 
+    /* white text in buttons */
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+/* this is for button hover effect */
+button:hover {
+    /* brighter orange on hover */
+    background-color: #f76f08; 
+}
+
+/* this is for styling the box displaying the current challenge*/
+.challenge {
+    /* light yellow orange background */
+    background-color: #fff0d4;
+    padding: 20px;
+    /* dashed orange border */
+    border: 2px dashed #ffa07a;
+    border-radius: 10px;
+    margin-top: 30px;
+    text-align: center;
+    animation: fadein 0.4s ease-in-out;
+}
+
+/* this is for the container for logout button at the bottom */
+.logout-container {
+    text-align: center;
+    margin-top: 30px;
+}
+
+/* this is for styling the logout button */
+.logout-btn {
+    background-color: #ff914d;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+/* this is for hover effect for logout button */
+.logout-btn:hover {
+    background-color: #f76f08;
+}
+
+/* this is for animation keyframes for fading in elements */
+@keyframes fadein {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+/* this is for responsive layout for small screens*/
+@media (max-width: 600px) {
+    .container {
+        padding: 20px;
+    }
+    button, input, select {
+        width: 100%;
+    }
+}
